@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'quiz/style.css' %}">
+    <title>Quiz Results</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <p>Total Questions: <span id="total-questions">0</span></p>
+        <p>Correct Answers: <span id="correct-answers">0</span></p>
+        <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+        <button id="restart-quiz">Reset Session & Restart Quiz</button>
+    </div>
+    <script src="{% static 'quiz/script.js' %}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadResults);
+    </script>
+</body>
+</html>
