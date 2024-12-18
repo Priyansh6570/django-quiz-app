@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'quiz/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'quiz/style.css' %}">
     <title>Question</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <button id="submit-answer">Submit</button>
         <button id="results-page">Result</button>
     </div>
-    <script src="{% static 'quiz/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'quiz/script.js' %}"></script>
     <script>
         document.getElementById("results-page").addEventListener("click", function() {
             window.location.href = "https://django-quiz-app-mf3p.onrender.com/quiz/results/";

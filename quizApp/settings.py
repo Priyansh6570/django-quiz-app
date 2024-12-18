@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-817)pir3a$x*c0#fsstl493l103aticm=m6h#_02+=9c5*0m!k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['https://django-quiz-app-mf3p.onrender.com']
+DEBUG = True
+# allow all hosts
+ALLOWED_HOSTS = ['*', 'https://django-quiz-app-mf3p.onrender.com']
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "quiz" / "static"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
