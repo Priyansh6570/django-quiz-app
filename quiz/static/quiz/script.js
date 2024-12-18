@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000/quiz/";
+const BASE_URL = "https://django-quiz-app-mf3p.onrender.com/quiz/";
 const userId = "test_user";
 
 document.addEventListener("DOMContentLoaded", () => {
